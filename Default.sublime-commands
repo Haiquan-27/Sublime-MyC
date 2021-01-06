@@ -1,0 +1,93 @@
+[
+	{
+		"command": "my_cs_main_menu",
+		"caption": "My C: New"
+	},
+	{
+		"command": "build",
+		"args": {
+			"choice_variant": true,
+			"build_system": "Packages/My C/My C.sublime-build",
+			"choice_build_system": true,
+			"variant": "Build and Run"
+		},
+		"caption": "My C: Build and Run"
+	},
+	{
+		"command": "build",
+		"args": {
+			"choice_variant": true,
+			"build_system": "Packages/My C/My C.sublime-build",
+			"choice_build_system": true,
+			"variant": "Build Only"
+		},
+		"caption": "My C: Build"
+	},
+	{
+		"command": "build",
+		"args": {
+			"choice_variant": true,
+			"build_system": "Packages/My C/My C.sublime-build",
+			"choice_build_system": true,
+			"variant": "Run"
+		},
+		"caption": "My C: RUN"
+	},
+	{
+		"command": "my_cs_set_view_with_encoding",
+		"args": {
+			"encoding": [
+				"utf-8",
+				"UTF-8"
+			]
+		},
+		"caption": "My C: file encoding to UTF-8"
+	},
+	{
+		"command": "my_cs_set_view_with_encoding",
+		"args": {
+			"encoding": [
+				"Western (Windows 1252)",
+				"GBK"
+			]
+		},
+		"caption": "My C: file encoding to GBK"
+	},
+	{
+		"caption": "My C: -"
+	},
+	{
+		"command": "build",
+		"args": {
+			"choice_variant": true,
+			"build_system": "Packages/My C/My C.sublime-build",
+			"choice_build_system": true,
+			"variant": ""
+		},
+		"caption": "My C: testing GCC"
+	},
+	{
+		"command": "my_cs_context_menu_top_toggle",
+		"caption": "My C: context menu top toggle"
+	},
+	{ "caption": "My C: -" },
+	{
+		"caption": "My C: build settings",
+		"command": "open_file",
+		"args": {"file": "${packages}/My C/My C.sublime-build"}
+	},
+	{
+		"caption": "My C: template settings",
+		"command": "open_file",
+		"args": {"file": "${packages}/My C/template.c"}
+	},
+	{
+		"caption": "My C: base settings",
+		"command": "open_file",
+		"args": {"file": "${packages}/My C/My C.sublime-settings"}
+	},
+	{
+		"caption": "My C: Dev",
+		"command": "my_cs_dev_testing",
+	}
+]

@@ -1,0 +1,32 @@
+[
+	{
+		"keys":["f9"],
+		"command": "build",
+		"args": {
+			"variant": "Build Only",
+			"choice_build_system": true,
+			"build_system": "Packages/My C/My C.sublime-build",
+			"choice_variant": true
+		}
+	},
+	{
+		"keys":["f10"],
+		"command": "build",
+		"args": {
+			"variant": "Run",
+			"choice_build_system": true,
+			"build_system": "Packages/My C/My C.sublime-build",
+			"choice_variant": true
+		},
+	},
+	{
+		"keys":["shift+f10"],
+		"command": "build",
+		"args": {
+			"variant": "Build and Run",
+			"choice_build_system": true,
+			"build_system": "Packages/My C/My C.sublime-build",
+			"choice_variant": true
+		}
+	},
+]

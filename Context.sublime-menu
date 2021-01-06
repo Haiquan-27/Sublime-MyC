@@ -1,0 +1,82 @@
+[
+     {
+          "id": "end", 
+          "caption": "-"
+     }, 
+     {
+          "children": [
+               {
+                    "args": {
+                         "choice_variant": true, 
+                         "variant": "Build and Run", 
+                         "choice_build_system": true, 
+                         "build_system": "Packages/My C/My C.sublime-build"
+                    }, 
+                    "command": "build", 
+                    "caption": "编译并运行"
+               }, 
+               {
+                    "args": {
+                         "choice_variant": true, 
+                         "variant": "Build Only", 
+                         "choice_build_system": true, 
+                         "build_system": "Packages/My C/My C.sublime-build"
+                    }, 
+                    "command": "build", 
+                    "caption": "编译"
+               }, 
+               {
+                    "args": {
+                         "choice_variant": true, 
+                         "variant": "Run", 
+                         "choice_build_system": true, 
+                         "build_system": "Packages/My C/My C.sublime-build"
+                    }, 
+                    "command": "build", 
+                    "caption": "运行"
+               }, 
+               {
+                    "caption": "-"
+               }, 
+               {
+                    "command": "my_cs_main_menu", 
+                    "caption": "新建"
+               }, 
+               {
+                    "args": {
+                         "encoding": [
+                              "utf-8", 
+                              "UTF-8"
+                         ]
+                    }, 
+                    "command": "my_cs_set_view_with_encoding", 
+                    "caption": "重置文件编码为UTF-8"
+               }, 
+               {
+                    "args": {
+                         "encoding": [
+                              "Western (Windows 1252)", 
+                              "GBK"
+                         ]
+                    }, 
+                    "command": "my_cs_set_view_with_encoding", 
+                    "caption": "重置文件编码为GBK"
+               }, 
+               {
+                    "args": {
+                         "choice_variant": true, 
+                         "variant": "", 
+                         "choice_build_system": true, 
+                         "build_system": "Packages/My C/My C.sublime-build"
+                    }, 
+                    "command": "build", 
+                    "caption": "显示GCC版本"
+               }, 
+               {
+                    "command": "my_cs_context_menu_top_toggle", 
+                    "caption": "顶置/底置右键菜单"
+               }
+          ], 
+          "caption": "My C"
+     }
+]

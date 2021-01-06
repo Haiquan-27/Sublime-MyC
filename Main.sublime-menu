@@ -1,0 +1,139 @@
+[
+	{
+		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
+		"children": [
+			{
+				"caption": "Package Settings",
+				"mnemonic": "P",
+				"id": "package-settings",
+				"children": [
+					{
+						"caption": "My C",
+						"children": [
+							{
+								"caption": "Buile",
+								"command": "open_file",
+								"args": {"file": "${packages}/My C/My C.sublime-build"}
+							},
+							{
+								"caption": "Template",
+								"command": "open_file",
+								"args": {"file": "${packages}/My C/template.c"}
+							},
+							{
+								"caption": "Basic",
+								"command": "open_file",
+								"args": {"file": "${packages}/My C/My C.sublime-settings"}
+							},
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"caption": "My C",
+		"id": "My C",
+		"children":
+		[
+			{
+				"command": "my_cs_main_menu",
+				"caption": "新建"
+			},
+			{
+				"command": "build",
+				"args": {
+					"choice_variant": true,
+					"build_system": "Packages/My C/My C.sublime-build",
+					"choice_build_system": true,
+					"variant": "Build and Run"
+				},
+				"caption": "编译并运行"
+			},
+			{
+				"command": "build",
+				"args": {
+					"choice_variant": true,
+					"build_system": "Packages/My C/My C.sublime-build",
+					"choice_build_system": true,
+					"variant": "Build Only"
+				},
+				"caption": "编译"
+			},
+			{
+				"command": "build",
+				"args": {
+					"choice_variant": true,
+					"build_system": "Packages/My C/My C.sublime-build",
+					"choice_build_system": true,
+					"variant": "Run"
+				},
+				"caption": "运行"
+			},
+			{
+				"command": "my_cs_set_view_with_encoding",
+				"args": {
+					"encoding": [
+						"utf-8",
+						"UTF-8"
+					]
+				},
+				"caption": "重置文件编码为UTF-8"
+			},
+			{
+				"command": "my_cs_set_view_with_encoding",
+				"args": {
+					"encoding": [
+						"Western (Windows 1252)",
+						"GBK"
+					]
+				},
+				"caption": "重置文件编码为GBK"
+			},
+			{
+				"caption": "-"
+			},
+			{
+				"command": "build",
+				"args": {
+					"choice_variant": true,
+					"build_system": "Packages/My C/My C.sublime-build",
+					"choice_build_system": true,
+					"variant": ""
+				},
+				"caption": "显示GCC版本"
+			},
+			{
+				"command": "my_cs_context_menu_top_toggle",
+				"caption": "顶置/底置右键菜单"
+			},
+			{ "caption": "-" },
+			{
+				"caption": "编译设置",
+				"command": "open_file",
+				"args": {"file": "${packages}/My C/My C.sublime-build"}
+			},
+			{
+				"caption": "模板设置",
+				"command": "open_file",
+				"args": {"file": "${packages}/My C/template.c"}
+			},
+			{
+				"caption": "基本设置",
+				"command": "open_file",
+				"args": {"file": "${packages}/My C/My C.sublime-settings"}
+			},
+			{ "caption": "-" },
+			{
+				"caption": "关于My C",
+				"children": 
+				[
+					"verison 0.3"
+				]
+			},
+			{ "caption": "-" }
+		]
+	}
+]

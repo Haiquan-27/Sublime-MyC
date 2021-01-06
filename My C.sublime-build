@@ -1,0 +1,28 @@
+{
+	"shell_cmd": "gcc.exe -v",//默认编译命令
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",//错误信息捕捉正则表达式
+	"working_dir": "${file_path}",//工作目录
+	"selector": "source.c",//对指定文件类型进行编译
+	"encoding":"cp936",//sublime命令行输出编码
+	"path":"%path%;C:\\Program Files\\Dev-Cpp\\MinGW64\\bin",//添加gcc环境变量
+	"env":
+	{
+		"build_ext":"-m32 -std=c99",//编译选项
+		"out_dir":"exe",//可执行文件输出文件夹,使用"."指定为当前目录,支持绝对路径和相对路径
+	},
+	"variants"://可选命令
+	[
+		{
+			"name": "Build and Run",
+			"shell_cmd": "\"${packages}\\\\My C\\\\bat_shell\\\\build.bat\" \"${file_name}\" \"${file_base_name}.exe\" \"%out_dir%\" \"%build_ext%\" RUN"
+		},
+		{
+			"name":"Build Only",
+			"shell_cmd": "\"${packages}\\\\My C\\\\bat_shell\\\\build.bat\" \"${file_name}\" \"${file_base_name}.exe\" \"%out_dir%\" \"%build_ext%\"",
+		},
+		{
+			"name":"Run",
+			"shell_cmd": "\"${packages}\\\\My C\\\\bat_shell\\\\run.bat\" \"%out_dir%\\\\${file_base_name}.exe\"",
+		}
+	]
+}

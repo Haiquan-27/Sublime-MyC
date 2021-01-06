@@ -1,0 +1,11 @@
+{
+	"template_start_word":"/* 千里之行始于足下 >_ */",
+	"file_syntax":"Packages/C++/C.sublime-syntax",
+	"title_name":"untitled.c",
+	// "title_name":"test",
+	"file_encoding_list":
+	{
+		"GBK(GB2312) Windows": ["Western (Windows 1252)","GBK"],
+		"UTF-8": ["utf-8","UTF-8"],
+	},
+}
