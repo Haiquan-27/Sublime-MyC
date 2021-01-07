@@ -81,7 +81,7 @@
 					]
 				},
 				"caption": "重置文件编码为UTF-8"
-			},
+			}, 
 			{
 				"command": "my_cs_set_view_with_encoding",
 				"args": {
