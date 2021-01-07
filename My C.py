@@ -3,7 +3,7 @@ import sublime_plugin
 import os
 import json
 import time
-
+ 
 class MyCsDevTestingCommand(sublime_plugin.TextCommand):
 	def run(self,edit):
 		shell_cmd = "start subl -a " + '"%s"'%(os.path.split(__file__)[0])
