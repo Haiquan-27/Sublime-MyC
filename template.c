@@ -1,7 +1,7 @@
 **
 ** 可自定义样式模板
 ** '**'为模板注释
-** 
+**  
 #include<stdio.h>
 ** #include<stdlib.h>
 ** #include""
