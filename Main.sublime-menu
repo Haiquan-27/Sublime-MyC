@@ -13,7 +13,7 @@
 						"caption": "My C",
 						"children": [
 							{
-								"caption": "Buile",
+								"caption": "Build",
 								"command": "open_file",
 								"args": {"file": "${packages}/My C/My C.sublime-build"}
 							},
